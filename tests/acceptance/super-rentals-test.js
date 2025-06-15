@@ -18,7 +18,7 @@ module('Acceptance | super rentals', function (hooks) {
 
     assert.strictEqual(currentURL(), '/about');
   });
-  
+
   test('viewing the details of a rental property', async function (assert) {
     await visit('/');
     assert.dom('.rental').exists({ count: 3 });
